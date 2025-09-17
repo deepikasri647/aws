@@ -1,8 +1,10 @@
-name:Hello
-on:push
+name: Hello World
+
+on: [push]
+
 jobs:
-  hello:
-    runs-on:ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
-    -name:print Hello World
-    run:echo "Hello World!!!"
+      - name: Say Hello
+        run: echo "Hello Deepi"
